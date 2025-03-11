@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bottom Line</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../public/images/the_bottom_line_logo.png">
+    <style>
+        body{
+            background: radial-gradient(circle, rgb(190, 119, 57), rgb(4, 137, 117), rgb(19, 27, 43));
+        }   
+        .mens_cont {
+            position: relative;
+            perspective: 1000px;
+        }
+        .mens_card {
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .mens_cont:hover .mens_card {
+            transform: rotateY(180deg);
+        }
+        .mens_front, .mens_back {
+            position: absolute;
+            width: 20rem;
+            height: 30rem;
+            backface-visibility: hidden;
+        }
+        .mens_back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="container container-fluid">
+    <!-- HEADER -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark mt-4 ">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Brand Name: Spaced to the left -->
+            <a class="navbar-brand fw-bold text-white" href="#">The Bottom Line</a>
+
+            <!-- Toggler Button: For Mobile View -->
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+            <!-- Navigation Links: Spaced evenly using space-around -->
+            <div class="collapse navbar-collapse justify-content-evenly m-3" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning fw-bold" href="#Home">Home</a> <!-- Highlighted -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Review">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Header End -->
+<!-- THE HOME CONTENT -->
+
+<main class="d-flex flex-wrap justify-content-around mt-5">
+    <!-- Mens_Card -->
+    <div class="container mens_cont mb-3" style="width: 20rem; height: 30rem;">
+        <div class="card mens_card  rounded-5 shadow-lg" style="width: 20rem; height: 30rem;">
+            <div class="mens_front">
+                <img src="public/images/MenCard.png" style="width: 20rem; height: 30rem;" class="img-fluid rounded-5" alt="Front Image">
+            </div>
+            <div class="mens_back d-flex justify-content-center align-items-center bg-success rounded-5">
+                <a href="#mens_arena" class="text-white fw-bold text-decoration-none">
+                    MENS SECTION
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Kids_Card -->
+    <div class="container mens_cont mb-3" style="width: 20rem; height: 30rem;">
+        <div class="card mens_card  rounded-5 shadow-lg" style="width: 20rem; height: 30rem;">
+            <div class="mens_front">
+                <img src="public/images/hyperlink_kid.jpg" style="width: 20rem; height: 30rem;" class="img-fluid rounded-5" alt="Front Image">
+            </div>
+            <div class="mens_back d-flex justify-content-center align-items-center bg-success rounded-5">
+                <a href="#kids_arena" class="text-white fw-bold text-decoration-none">
+                    KIDS SECTION
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Womens_Card -->
+    <div class="container mens_cont mb-3" style="width: 20rem; height: 30rem;">
+        <div class="card mens_card  rounded-5 shadow-lg" style="width: 20rem; height: 30rem;">
+            <div class="mens_front">
+                <img src="public/images/WomenCard.png" style="width: 20rem; height: 30rem;" class="img-fluid rounded-5" alt="Front Image">
+            </div>
+            <div class="mens_back d-flex justify-content-center align-items-center bg-success rounded-5">
+                <a href="#womens_arena" class="text-white fw-bold text-decoration-none">
+                    WOMENS SECTION
+                </a>
+            </div>
+        </div>
+    </div> 
+</main>
+<!-- CLOTHES SECTION -->
+<section>
+    <!-- MENS SECTION -->
+    <nav class="navbar navbar-expand-lg bg-dark mt-4 " id="mens_arena">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Brand Name: Spaced to the left -->
+            <a class="navbar-brand fw-bold text-white" href="#">The Bottom Line : <span class="text-warning">Mens Arena</span></a>
+        </div>
+    </nav>
+    <!-- Bottom Line : Men -->
+    
+    <div class="d-flex flex-wrap justify-content-around">
+        <!-- 1st Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/MensArena1.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="accordion_men_product1">
+                    <!-- Product -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_p1" aria-expanded="false" aria-controls="men_arena_p1">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="men_arena_p1" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product1">
+                            <ul>
+                                <li>INTUNE</li>
+                                <li>Stripes</li>
+                                <li>Cotton Blend Polo Men's T-Shirt</li>
+                                <li>MRP ₹599 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_a1" aria-expanded="false" aria-controls="men_arena_a1">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="men_arena_a1" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product1">
+                            <div class="accordion-body">INTUNE is a trendy value fashion brand that offers high-quality, pocket-friendly clothing and accessories to inspire you to look your best while being a smart shopper. Designed for those who love to experiment with style and don't like repeating outfits-those with a social media feed that's all about fresh fashion.</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_l1" aria-expanded="false" aria-controls="men_arena_l1">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="men_arena_l1" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product1">
+                            <div class="text-center pt-4">
+                                <a href="https://www.shoppersstop.com/intune-stripes-cotton-blend-polo-mens-t-shirt/p-A24M-CLPOLK510/colorChange/A24M-CLPOLK510_SAGE_GREEN">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/MensArena2.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="accordion_men_product2">
+                    <!-- Product -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_p2" aria-expanded="false" aria-controls="men_arena_p2">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="men_arena_p2" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product2">
+                            <ul>
+                                <li>AMERICAN EAGLE</li>
+                                <li>Cotton Straight Fit Men's Jeans</li>
+                                <li>Light Wash</li>
+                                <li>MRP ₹3,009 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_a2" aria-expanded="false" aria-controls="men_arena_a2">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="men_arena_a2" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product2">
+                            <div class="accordion-body">AMERICAN EAGLE</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_l2" aria-expanded="false" aria-controls="men_arena_l2">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="men_arena_l2" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product2">
+                            <div class="text-center pt-4">
+                                <a href="https://www.shoppersstop.com/american-eagle-light-wash-cotton-straight-fit-mens-jeans/p-A23EE0116571841/colorChange/A23EE0116571841_BLUE">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/MensArena3.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="accordion_men_product3">
+                    <!-- Product -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_p3" aria-expanded="false" aria-controls="men_arena_p3">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="men_arena_p3" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product3">
+                            <ul>
+                                <li>LIFE</li>
+                                <li>Cotton Poly Spandex Knitted Mens Ankle Socks</li>
+                                <li>Light Wash</li>
+                                <li>MRP ₹119 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_a3" aria-expanded="false" aria-controls="men_arena_a3">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="men_arena_a3" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product3">
+                            <div class="accordion-body">Life is a casual wear brand for young adults and kids by Shoppers Stop. Its purpose is to create quality outfits that are stylish and to help the young be trendy and live a free-spirited life. The Indian clothing brand provides a range of high-quality denim and Western fashion-forward styles like denim, joggers, hoodies and jackets. You can reach out to the brand at 7969727777 or customercare@shoppersstop.com.</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#men_arena_l3" aria-expanded="false" aria-controls="men_arena_l3">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="men_arena_l3" class="accordion-collapse collapse" data-bs-parent="#accordion_men_product3">
+                            <div class="text-center pt-4">
+                                <a href="https://www.shoppersstop.com/life-cotton-poly-spandex-knitted-mens-ankle-socks/p-123456789">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KIDS SECTION -->
+    <nav class="navbar navbar-expand-lg bg-dark mt-4 " id="kids_arena">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Brand Name: Spaced to the left -->
+            <a class="navbar-brand fw-bold text-white" href="#">The Bottom Line : <span class="text-warning">Kids Arena</span></a>
+        </div>
+    </nav>
+    <!-- Bottom Line : Kids -->
+    <div class="d-flex flex-wrap justify-content-around">
+        <!-- 1st Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/KidsArena1.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="kids_accordion_1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_p1" aria-expanded="false" aria-controls="kids_p1">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="kids_p1" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_1">
+                            <ul>
+                                <li>INTUNE</li>
+                                <li>Graphic Print</li>
+                                <li>Cotton Round Neck Boys T-Shirt</li>
+                                <li>MRP ₹199 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_a1" aria-expanded="false" aria-controls="kids_a1">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="kids_a1" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_1">
+                            <div class="accordion-body">INTUNE is a trendy value fashion brand that offers high-quality, pocket-friendly clothing and accessories.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_l1" aria-expanded="false" aria-controls="kids_l1">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="kids_l1" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_1">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/intune-graphic-print-cotton-round-neck-boys-t-shirt/p-S24K-SBTSHK248/colorChange/S24K-SBTSHK248_WHITE">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/KidsArena2.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="kids_accordion_2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_p2" aria-expanded="false" aria-controls="kids_p2">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="kids_p2" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_2">
+                            <ul>
+                                <li>STOP</li>
+                                <li>Solid Cotton Regular Fit Boys Shorts</li>
+                                <li>Light Wash</li>
+                                <li>MRP ₹199 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_a2" aria-expanded="false" aria-controls="kids_a2">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="kids_a2" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_2">
+                            <div class="accordion-body">STOP is an everyday clothing brand for women, men and kids by Shoppers Stop. The Indian lifestyle brand offers best-selling styles that are accessible, wearable and comfortable for daily wear. You can reach out to the brand at 7969727777 or customercare@shoppersstop.com.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_l2" aria-expanded="false" aria-controls="kids_l2">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="kids_l2" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_2">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/stop-solid-cotton-regular-fit-boys-shorts/p-S24710BSHORT33/colorChange/S24710BSHORT33_NAVY">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/KidsArena3.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion accordion-flush" id="kids_accordion_3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_p3" aria-expanded="false" aria-controls="kids_p3">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="kids_p3" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_3">
+                            <ul>
+                                <li>JEWELZ</li>
+                                <li>Bow With butterfly Party Wear Hair Band ( Pink )</li>
+                                <li>MRP ₹247 (inclusive of all taxes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_a3" aria-expanded="false" aria-controls="kids_a3">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="kids_a3" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_3">
+                            <div class="accordion-body">Jewelz is a women's fashion jewelry and accessories brand aiming to offer products precisely crafted with the right combination of mesmerizing colors, patterns, textures made with handcrafted techniques from traditional and mysterious faraway places. The Indian jewelry brand's extensive range of costume jewelry, bags, belts, stoles, clips and other accessories has great appeal for all ages</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kids_l3" aria-expanded="false" aria-controls="kids_l3">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="kids_l3" class="accordion-collapse collapse" data-bs-parent="#kids_accordion_3">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/jewelz-bow-with-butterfly-party-wear-hair-band-pink-/p-CHB399A6772_base/colorChange/CHB399A6772_NoColour">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WOMENS SECTION -->
+    <nav class="navbar navbar-expand-lg bg-dark mt-4 " id="womens_arena">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Brand Name: Spaced to the left -->
+            <a class="navbar-brand fw-bold text-white" href="#">The Bottom Line : <span class="text-warning">Womens Arena</span></a>
+        </div>
+    </nav>
+    <!-- Bottom Line : Women -->
+    <div class="d-flex flex-wrap justify-content-around">
+        <!-- 1st Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/WomenArena1.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <!-- Product -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_p1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="women_arena_p1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <ul>
+                            <li>LIFE</li>
+                            <li>Solid Blended Fabric</li>
+                            <li>Round Neck Women's T-Shirt</li>
+                            <li>MRP ₹399 (inclusive of all taxes)</li>   
+                            </ul>        
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_a1" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="women_arena_a1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Life is a casual wear brand for young adults and kids by Shoppers Stop. Its purpose is to create quality outfits that are stylish and to help the young be trendy and live a free-spirited life. The Indian clothing brand provides a range of high-quality denim and Western fashion-forward styles like denim, joggers, hoodies and jackets. You can reach out to the brand at 7969727777 or customercare@shoppersstop.com.</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_l1" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="women_arena_l1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/life-solid-blended-fabric-round-neck-womens-t-shirt/p-A24507KT06OW/colorChange/A24507KT06OW_OFF_WHITE">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/WomenArena2.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <!-- Product -->
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_p2" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="women_arena_p2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                            <ul>
+                            <li>LIFE</li>
+                            <li>Mid Rise Denim Relaxed Fit Women's Jeans</li>
+                            <li>Light Wash</li>
+                            <li>MRP ₹509 (inclusive of all taxes)</li>   
+                            </ul>        
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_a2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="women_arena_a2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body">LIFE</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_l2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="women_arena_l2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/life-mid-rise-denim-relaxed-fit-womens-jeans/p-S23507DEN407/colorChange/S23507DEN407_MID_STONE">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Product -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="public/images/WomenArena3.png" height="400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <!-- Product -->
+                <div class="accordion accordion-flush" id="accordionFlushExample3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_p3" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product
+                            </button>
+                        </h2>
+                        <div id="women_arena_p3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                            <ul>
+                            <li>FRATINI</li>
+                            <li>Blended Solid Casual Wear Belts</li>
+                            <li>MRP ₹239(inclusive of all taxes)</li>   
+                            </ul>        
+                        </div>
+                    </div>
+                    <!-- About the Brand -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_a3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                About the Brand
+                            </button>
+                        </h2>
+                        <div id="women_arena_a3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                            <div class="accordion-body">Fratini is a unisex contemporary clothing brand by Shoppers Stop that embodies comfort, style, and clean cuts. The Indian premium unisex fashion brand offers a well-curated trendy collection of work, evening, party and desk-to-dinner outfits. You can reach out to the brand at 1-800-419-6648 or customercare@shoppersstop.com.</div>
+                        </div>
+                    </div>
+                    <!-- Links to Buy -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#women_arena_l3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Links to Buy
+                            </button>
+                        </h2>
+                        <div id="women_arena_l3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+                            <div class="text-center pt-4"><a href="https://www.shoppersstop.com/fratini-blended-solid-casual-wear-belts/p-S23346BELT13/colorChange/S23346BELT13_BLACK">Check it out</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- REVIEWS AND RATINGS -->
+<div class="d-flex flex-wrap justify-content-around text-center text-md-start m-5 p-3" id="Review">
+    <!-- review 1 -->
+    <div class="card m-2" style="width: 16rem; height: 32rem;">
+        <div class="card-body">
+        <h3 class="card-title text-center">Mens Oversized</h3>
+        <img class="pe-3 " src="public/images/review-2.webp" height="100" align="left">
+        <p class="card-text">
+        <h6 class="card-subtitle mb-2 text-body-secondary">Black T-shirt</h6>
+
+            <div class="text-warning">
+                <span class="bi bi-star-fill "></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill text-secondary"></span>
+            </div>
+            The minimalist design paired well with jeans, shorts, or joggers, adding versatility to the wardrobe. The fabric held up well after multiple washes, retaining its shape and deep black color without fading.
+            Overall, the t-shirt delivered on both comfort and aesthetics, making it a great choice for anyone seeking a laid-back yet stylish look.</p>
+        </div>
+    </div>
+    <!-- review-1-end -->
+
+    <!-- review 2 -->
+    <div class="card m-2" style="width: 16rem; height: 32rem;">
+        <div class="card-body">
+        <h3 class="card-title text-center">Women T-Shirts</h3>
+        <img class="pe-3 " src="public/images/review-1.avif" height="100" align="left">
+        <p class="card-text">
+        <h6 class="card-subtitle mb-2 text-body-secondary">Polka-dot Crop T-shirt</h6>
+
+            <div class="text-warning">
+                <span class="bi bi-star-fill "></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            The cotton t-shirt impressed me with its soft, breathable, and lightweight fabric, making it ideal for warm weather. Its design is both stylish and comfortable, offering a flattering fit without feeling too tight.
+            Overall, the t-shirt made a great addition to the wardrobe and is highly recommended for anyone seeking a comfortable yet chic outfit. </p>
+        </div>
+    </div>
+    <!-- review-2-end -->
+
+    <!-- review 3 -->
+    <div class="card m-2" style="width: 16rem; height: 32rem;">
+        <div class="card-body">
+        <h3 class="card-title text-center">Jean Comfy</h3>
+        <img class="pe-3 " src="public/images/review-3.webp" height="100" align="left">
+        <p class="card-text">
+        <h6 class="card-subtitle mb-2 text-body-secondary">Kids Pair of Jeans</h6>
+
+            <div class="text-warning">
+                <span class="bi bi-star-fill "></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            The adjustable waistband offered a customizable fit. The classic denim design paired well with various tops. Even after multiple washes, the jeans retained their color and softness.
+            Overall, the jeans combined durability, comfort, and style, making them a reliable choice for both everyday wear and special outings.</p>
+        </div>
+    </div>
+    <!-- review-3-end -->
+</div>
+<!-- CONTACT -->
+<footer class="bg-dark text-light" id="Contact">
+    <div class="container-fluid text-center text-warning">
+        <h3 class="pt-4">Want Style Ideas and Treats?</h3>
+    </div>
+    <div class="d-flex flex-wrap justify-content-around text-center text-md-start m-5 p-3">
+        <div class="col-12 col-md-3 mb-3">
+            <h5>Support</h5>
+            <div>Contact Us</div>
+            <div>FAQs</div>
+            <div>Size Guide</div>
+            <div>Shipping & Returns</div>
+        </div>
+        <div class="col-12 col-md-3 mb-3">
+            <h5>Shop</h5>
+            <div>Men's Shopping</div>
+            <div>Women's Shopping</div>
+            <div>Kids' Shopping</div>
+            <div>Discounts</div>
+        </div>
+        <div class="col-12 col-md-3 mb-3">
+            <h5>Company</h5>
+            <div>Our Story</div>
+            <div>Careers</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy & Cookie Policy</div>
+        </div>
+        <div class="col-12 col-md-3 mb-3">
+            <h5>Contact</h5>
+            <div>1-202-555-0105</div>
+            <div>1-202-555-0106</div>
+            <div>help@thebottomline.com</div>
+            <div class="form-floating">
+                <textarea class="form-control" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Other Comments</label>
+            </div>
+        </div>  
+    </div>
+</footer>
+<!-- SCRIPT -->
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

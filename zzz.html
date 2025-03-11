@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Flip Card</title>
+
+    <style>
+           
+        .mens_cont {
+            position: relative;
+            perspective: 1000px;
+        }
+        .mens_card {
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .mens_cont:hover .mens_card {
+            transform: rotateY(180deg);
+        }
+        .mens_front, .mens_back {
+            position: absolute;
+            backface-visibility: hidden;
+            width: 18rem;
+            height: 20rem;
+        }
+        .mens_back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex flex-wrap justify-content-around">
+        <div class="container mens_cont" style="width: 18rem; height: 20rem;">
+            <div class="card mens_card rounded-5 shadow-lg" style="width: 18rem; height: 20rem;">
+                <div class="mens_front">
+                    <img src="public/images/MensArena1.png" class="img-fluid rounded-5" alt="Front Image">
+                </div>
+                <div class="mens_back d-flex justify-content-center align-items-center bg-success rounded-5">
+                    <a href="https://example.com" class="text-white fw-bold text-decoration-none" target="_blank">
+                        Link to Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
